@@ -1,0 +1,31 @@
+:root {
+    --primary: #42E2B8;
+    --gradient: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+}
+body{
+  font-family: 'Oxygen', sans-serif;
+  background: var(--gradient);
+}
+.hero {
+
+  /* block-size: 50px; */
+}
+
+.h1{
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95px;
+}
+
+.h3{
+  font-size: 48px;
+  font-style: normal;
+  line-height: 77px;
+
+}
+.social-item{
+  background: var(--primary);
+  display: inline-block;
+
+}
