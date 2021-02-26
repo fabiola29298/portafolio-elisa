@@ -3,29 +3,138 @@
     --gradient: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
 }
 body{
+  font-size: 16px;
   font-family: 'Oxygen', sans-serif;
   background: var(--gradient);
+  margin: 0;
+}
+.wrapper {
+  max-inline-size: 1132px;
+  margin: auto;
+}
+.main{
+}
+.main-content {
+  padding-block-start: 60px;
+  margin: 16px;
+  /* padding-inline: 16px; */
 }
 .hero {
-
-  /* block-size: 50px; */
+  position: sticky;
+  top: 0;
 }
+.hero-content {
+  position:relative;
+}
+header {
+  padding-inline: 20px;
+  padding-block: 32px;
 
+  /* background-color: #E96D71; */
+  font-size: 14px;
+  color: var(--white);
+  position: absolute;
+  inset-block-start:0;
+  inline-size:80%;
+}
+.header-img{
+  padding-inline-start: 200px;
+  padding-inline-end: 100px;
+  display: inline;
+
+}
+.header-menu{
+  padding-inline-start: 50px;
+  padding-inline-end: 50px;
+  display: inline;
+
+}
+.header-menu a {
+  margin-inline: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: gray;
+}
+.header-bottom{
+  color: black;
+  padding-block: 13px;
+  padding-inline: 13px;
+  border: 2px solid black;
+  background: #42E2B8;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
 .h1{
   font-size: 59px;
   font-style: normal;
   font-weight: 700;
-  line-height: 95px;
+  /* line-height: 95px; */
+  margin-block: 0;
 }
 
 .h3{
   font-size: 48px;
   font-style: normal;
-  line-height: 77px;
+  /* line-height: 77px; */
+  margin-block: 0;
 
 }
 .social-item{
   background: var(--primary);
   display: inline-block;
 
+}
+.descripcion{
+  margin-block: 100px;
+  margin-inline: 90px;
+  text-align: center;
+}
+#parrafo-descripcion{
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 55px;
+}
+
+.descripcion p{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 39px;
+}
+.descripcion img{
+  height: 80px;
+}
+.hero-presentation{
+  display: flex;
+  align-content: flex-end;
+}
+.hero-img{
+  display: block;
+  height: 411px;
+  margin-inline-end: 128px;
+}
+.hero-text{
+  display: block;
+  margin-inline-start: 128px;
+  margin-block-start: 75px;
+  inline-size: 543px;
+  /* align-self: flex-end; */
+
+}
+.social{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.social-item img{
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #42E2B8;
+  /* cursor: pointer; */
 }
