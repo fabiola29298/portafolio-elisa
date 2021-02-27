@@ -77,26 +77,29 @@ header {
   display: flex;
 }
 /* Fin de Menu */
-.h1{
+h1{
   font-size: 59px;
   font-style: normal;
   font-weight: 700;
   /* line-height: 95px; */
   margin-block: 0;
 }
-
-.h3{
+h3{
   font-size: 48px;
   font-style: normal;
   /* line-height: 77px; */
   margin-block: 0;
 
 }
+
+
 .social-item{
   background: var(--primary);
   display: inline-block;
 
 }
+
+/* .descripcion */
 .descripcion{
   margin-block: 100px;
   margin-inline: 90px;
@@ -107,7 +110,6 @@ header {
   font-size: 34px;
   line-height: 55px;
 }
-
 .descripcion p{
   font-weight: bold;
   font-size: 24px;
@@ -116,22 +118,17 @@ header {
 .descripcion img{
   height: 80px;
 }
+/* fin de descripcion */
+
+/* .hero presentacion */
 .hero-presentation{
   display: flex;
-  align-content: flex-end;
+  justify-content: center;
 }
 .hero-img{
-  display: block;
   height: 411px;
-  margin-inline-end: 128px;
 }
-.hero-text{
-  display: block;
-  margin-inline-start: 128px;
-  margin-block-start: 45px;
-  inline-size: 543px;
-  /* align-self: flex-end; */
-
+.hero-group-text{
 }
 .social{
   display: flex;
@@ -142,18 +139,20 @@ header {
   display: flex;
   border: 1px solid black;
   padding: 5px;
-  height: 30px;
-  width: 30px;
+  height: 44px;
   border-radius: 5px;
   box-sizing: border-box;
   background: #42E2B8;
-  /* cursor: pointer; */
 }
+/* fin hero presentacion  */
+
+/* .proyecto */
 .proyecto{
   display: flex;
-  align-content: flex-end;
+  justify-content: center;
 }
 .proyecto img{
+  display: flex;
   height: 300px;
 }
 .proyecto h3{
@@ -165,40 +164,36 @@ header {
   padding-block: 4px;
   padding-inline: 8px;
 }
-.btn-proyecto {
+.group-btn-proyecto{
+  display: flex;
+  flex-direction: row;
+}
+.btn-proyecto, .btn-github {
   color: black;
-  background: #42E2B8;
   border: 2px solid black;
-  border-radius: 90px;
   box-sizing: border-box;
   height: 40px;
-  /* margin-block: 13px; */
   padding-inline: 10px;
   text-transform: uppercase;
   letter-spacing: 1.25px;
   font-weight: bold;
   font-size: 14px;
+  border-radius: 90px;
+  display: flex;
+  align-items:center;
+
+}
+.btn-proyecto {
+  background: #42E2B8;
+  margin-inline-end: 1em;
 
 }
 .btn-github {
-  color: black;
   background: transparent;
-  border: 2px solid black;
-  border-radius: 90px;
-  box-sizing: border-box;
-  height: 40px;
-  /* margin-block: 13px; */
-  padding-inline: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1.25px;
-  font-weight: bold;
-  font-size: 14px;
-
-}
-  .btn-github  p {
-  display: inline;
 }
 
-  .btn-github img {
+.btn-github img {
   height: 15px;
+  margin-inline-end: 0.5em;
 }
+/*  fin de proyecto */
