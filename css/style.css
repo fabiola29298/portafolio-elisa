@@ -258,6 +258,7 @@ h3{
 .form-seccion{
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .form-content{
   display: flex;
@@ -265,6 +266,9 @@ h3{
 
   flex-direction: column;
   justify-content: center;
+}
+.form{
+  text-align: start;
 }
 .form-title{
 
@@ -278,4 +282,32 @@ h3{
   padding-inline: 8px;
 
 }
+.form input {
+  inline-size: 100%;
+  padding-inline: 16px;
+  padding-block: 12px;
+  display: block;
+  margin-block-end: 24px;
+  background: #FFFFFF;
+
+  border: 1px solid #858C94;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.form input[type="submit"] {
+  background: #42E2B8;
+  border: 2px solid #0F0A0A;
+  text-transform: uppercase;
+  border-radius: 90px;
+  font-size: 14px;
+}
+
+.form input::-webkit-input-placeholder {
+   color: #0F0A0A;
+}
 /* fin de formulario */
+
+/* footer */
+
+
+/* fin de footer */
