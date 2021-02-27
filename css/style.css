@@ -1,12 +1,17 @@
 :root {
+    font-size: 18px;
     --primary: #42E2B8;
     --gradient: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
 }
+html{
+
+}
 body{
-  font-size: 16px;
   font-family: 'Oxygen', sans-serif;
   background: var(--gradient);
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .wrapper {
   max-inline-size: 1132px;
@@ -19,6 +24,7 @@ body{
   margin: 16px;
   /* padding-inline: 16px; */
 }
+/* Menu */
 .hero {
   position: sticky;
   top: 0;
@@ -30,30 +36,34 @@ header {
   padding-inline: 20px;
   padding-block: 32px;
 
-  /* background-color: #E96D71; */
+  background-color: #00000038;
   font-size: 14px;
   color: var(--white);
-  position: absolute;
+  /* position: absolute; */
   inset-block-start:0;
-  inline-size:80%;
+  inline-size:100%;
+  /* Elemento de flex */
+  display: flex;
+  justify-content: space-around;
 }
 .header-img{
   padding-inline-start: 200px;
   padding-inline-end: 100px;
-  display: inline;
+  display: flex;
 
 }
 .header-menu{
   padding-inline-start: 50px;
   padding-inline-end: 50px;
-  display: inline;
+  display: flex;
+  align-items: center;
 
 }
 .header-menu a {
   margin-inline: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: gray;
+  color: black;
 }
 .header-bottom{
   color: black;
@@ -64,8 +74,9 @@ header {
   letter-spacing: 1px;
   border-radius: 20px;
   text-transform: uppercase;
-  box-sizing: border-box;
+  display: flex;
 }
+/* Fin de Menu */
 .h1{
   font-size: 59px;
   font-style: normal;
