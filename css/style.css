@@ -129,6 +129,9 @@ h3{
   height: 411px;
 }
 .hero-group-text{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .social{
   display: flex;
