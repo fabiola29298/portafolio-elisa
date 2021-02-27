@@ -308,6 +308,28 @@ h3{
 /* fin de formulario */
 
 /* footer */
+.footer{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-block: 40px ;
+}
+.footer-content{
+  display: flex;
+}
 
+.footer-img{
+  padding-inline-start: 200px;
+  padding-inline-end: 100px;
+  display: flex;
+
+}
+.footer-social{
+  padding-inline-start: 50px;
+  padding-inline-end: 50px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 
 /* fin de footer */
