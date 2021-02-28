@@ -104,7 +104,12 @@ header {
   display: inline-block;
 
 }
-
+#header-btn-text-mobile{
+  display:none;
+}
+#header-btn-text-desktop{
+  display:block;
+}
 /* .hero presentacion */
 .hero-presentation{
   display: flex;
@@ -389,6 +394,12 @@ header {
   }
   .social-item{
     margin-inline: 0.5em;
+  }
+  #header-btn-text-mobile{
+    display:block;
+  }
+  #header-btn-text-desktop{
+    display:none;
   }
   /* .hero presentacion */
   .hero-presentation{
