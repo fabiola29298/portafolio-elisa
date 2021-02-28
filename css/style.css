@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
     font-size: 18px;
     --primary: #42E2B8;
@@ -13,11 +18,40 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+.header-bottom{
+  color: black;
+  padding-block: 13px;
+  padding-inline: 13px;
+  border: 2px solid black;
+  background: #42E2B8;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  display: flex;
+}
+/* Fin de Menu */
+h1{
+  font-size: 59px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95px;
+  margin-block: 0;
+}
+h3{
+  font-size: 48px;
+  font-style: normal;
+  line-height: 77px;
+  margin-block: 0;
+
+}
+p{
+  line-height: 26px;
+}
+
+/* Desktop Styles */
 .wrapper {
   max-inline-size: 1132px;
   margin: auto;
-}
-.main{
 }
 .main-content {
   padding-block-start: 60px;
@@ -34,17 +68,16 @@ body{
   position:relative;
 }
 header {
+  display: flex;
+  font-size: 14px;
+  color: var(--white);
+
   padding-inline: 20px;
   padding-block: 32px;
 
-  background-color: #00000038;
-  font-size: 14px;
-  color: var(--white);
-  /* position: absolute; */
-  inset-block-start:0;
+  /* inset-block-start:0; */
   inline-size:100%;
-  /* Elemento de flex */
-  display: flex;
+  background-color: #00000038;
   justify-content: space-around;
 }
 .header-img{
@@ -66,39 +99,40 @@ header {
   text-decoration: none;
   color: black;
 }
-.header-bottom{
-  color: black;
-  padding-block: 13px;
-  padding-inline: 13px;
-  border: 2px solid black;
-  background: #42E2B8;
-  letter-spacing: 1px;
-  border-radius: 20px;
-  text-transform: uppercase;
-  display: flex;
-}
-/* Fin de Menu */
-h1{
-  font-size: 59px;
-  font-style: normal;
-  font-weight: 700;
-  /* line-height: 95px; */
-  margin-block: 0;
-}
-h3{
-  font-size: 48px;
-  font-style: normal;
-  /* line-height: 77px; */
-  margin-block: 0;
-
-}
-
-
 .social-item{
   background: var(--primary);
   display: inline-block;
 
 }
+
+/* .hero presentacion */
+.hero-presentation{
+  display: flex;
+  justify-content: center;
+}
+.hero-img{
+  max-width: 90%;
+}
+.hero-group-text{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.social{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.social-item img{
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  height: 44px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #42E2B8;
+}
+/* fin hero presentacion  */
 
 /* .descripcion */
 .descripcion{
@@ -121,34 +155,6 @@ h3{
 }
 /* fin de descripcion */
 
-/* .hero presentacion */
-.hero-presentation{
-  display: flex;
-  justify-content: center;
-}
-.hero-img{
-  height: 411px;
-}
-.hero-group-text{
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-.social{
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.social-item img{
-  display: flex;
-  border: 1px solid black;
-  padding: 5px;
-  height: 44px;
-  border-radius: 5px;
-  box-sizing: border-box;
-  background: #42E2B8;
-}
-/* fin hero presentacion  */
 
 /* .proyecto */
 .proyecto{
@@ -215,6 +221,7 @@ h3{
 }
 /*  fin de proyecto */
 
+
 /* review */
 .review{
   display: flex;
@@ -254,6 +261,7 @@ h3{
 }
 
 /* fin de review */
+
 
 /* formulario */
 .form-seccion{
@@ -334,3 +342,173 @@ h3{
 }
 
 /* fin de footer */
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+  body{
+    padding: 1em;
+  }
+  .main-content {
+    padding-block-start: 0;
+    margin: 0px;
+    /* padding-inline: 16px; */
+  }
+  .hero {
+    position: static;
+    top: 0;
+    z-index: 1;
+  }
+  .hero-content {
+    position:static;
+  }
+  header {
+    padding-inline: 0;
+    padding-block: 0;
+    justify-content: space-between;
+
+    background-color: transparent;
+    /* position: absolute; */
+    inset-block-start:disabled;
+    /* inline-size:0; */
+  }
+
+  .header-img{
+    padding-inline-start:0;
+    padding-inline-end: 0;
+    display: block;
+    width: 70px;
+  }
+
+  .header-menu{
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    display: none;
+    /* align-items: center; */
+  }
+  .header-menu a {
+  }
+  .social-item{
+    margin-inline: 0.5em;
+  }
+  /* .hero presentacion */
+  .hero-presentation{
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .hero-group-text{
+    /* justify-content: center; */
+    display: none;
+    /* flex-direction: column; */
+  }
+  .social{
+    display: none;
+    /* align-items: center; */
+    /* gap: 16px; */
+  }
+
+  /* .descripcion */
+  .descripcion{
+    margin-inline: 1em;
+  }
+  #parrafo-descripcion{
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .descripcion p{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 39px;
+  }
+  .descripcion img{
+    height: 80px;
+  }
+  /* fin de descripcion */
+
+
+  /* .proyecto */
+  .proyecto{
+    flex-direction: column-reverse;
+  }
+  .proyecto h3{
+    line-height: 38px;
+  }
+  .proyecto p{
+    text-align: start;
+  }
+  .group-btn-proyecto{
+    align-self: baseline;
+    display: block;
+    flex-direction: column;
+    align-self:  center;
+    box-sizing: border-box;
+
+  }
+  .hero-text{
+    align-items: flex-start;
+  }
+  /*  fin de proyecto */
+
+
+  /* review */
+  .content-review{
+    padding: 1em;
+    margin: 1em;
+
+  }
+  .parrafo-negrilla{
+    line-height: 25px;
+  }
+  /* fin de review */
+
+  /* formulario */
+  .form-seccion{
+    text-align: none;
+  }
+  .form-title{
+    line-height: 40px;
+
+  }
+  /* fin de formulario */
+
+
+  /* footer */
+  .footer{
+    flex-direction: column;
+    justify-content: none;
+  }
+  .footer-content{
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .footer-img{
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    display: none;
+
+
+  }
+  .footer-social{
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    display: block;
+    align-items: none;
+    gap: 0;
+  }
+
+  .footer-content p{
+    text-align: center;
+    padding: 24px;
+
+  }
+  /* fin de footer */
+
+}
+
+/* Tablet Styles */
+/* @media only screen and (min-width: 401px) and (max-width: 960px) { */
+  /* body { */
+    /* background-color: #F5CF8E; Yellow */
+  /* } */
+
+/* } */
