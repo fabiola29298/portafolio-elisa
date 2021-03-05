@@ -442,9 +442,14 @@ header {
   }
   .proyecto h3{
     line-height: 38px;
+    margin-block: 0.5em;
   }
   .proyecto p{
     text-align: start;
+  }
+  .btn-proyecto{
+
+    margin-block: 1em;
   }
   .group-btn-proyecto{
     align-self: baseline;
@@ -478,6 +483,9 @@ header {
   .form-title{
     line-height: 40px;
 
+  }
+  .form-content p{
+  margin: 1em;
   }
   /* fin de formulario */
 
