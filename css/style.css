@@ -123,10 +123,15 @@ header {
   display: flex;
   flex-direction: column;
 }
+.hero-text p{
+  margin-block: 1em;
+}
 .social{
   display: flex;
   align-items: center;
   gap: 16px;
+
+  margin-block-start: 1em;
 }
 .social-item img{
   display: flex;
@@ -136,6 +141,7 @@ header {
   border-radius: 5px;
   box-sizing: border-box;
   background: #42E2B8;
+  padding: 0.5em;
 }
 /* fin hero presentacion  */
 
@@ -210,6 +216,7 @@ header {
 }
 .btn-github {
   background: transparent;
+  margin-block-start: 1.2em;
 }
 
 .btn-github img {
@@ -294,6 +301,10 @@ header {
   box-shadow: -3px 3px 0 .1px white;
   padding-block: 4px;
   padding-inline: 8px;
+
+}
+.form-content p{
+ margin-block:1em;
 
 }
 .form input {
@@ -442,7 +453,7 @@ header {
   }
   .proyecto h3{
     line-height: 38px;
-    margin-block: 0.5em;
+    margin-block: 1em;
   }
   .proyecto p{
     text-align: start;
@@ -471,6 +482,21 @@ header {
     margin: 1em;
 
   }
+  .i-review::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.75) 0,
+      rgba(255, 255, 255, 0) 40%
+    );
+    transition: transform 0.7s linear;
+  }
+
   .parrafo-negrilla{
     line-height: 25px;
   }
