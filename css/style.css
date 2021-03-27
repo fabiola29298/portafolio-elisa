@@ -550,6 +550,48 @@ header {
 
 }
 
+@media (min-width: 1280px) {
+    body {
+        background: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+    }
+
+    .circle {
+        position: absolute;
+        z-index: -2;
+        width: 400px;
+        height: 400px;
+        /* backdrop-filter: blur(199px); */
+    }
+
+    .circle:nth-child(1){
+        left: -180px;
+        top: 68px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(191, 53, 142, 0.5) 0%, rgba(191, 53, 142, 0) 100%);
+
+    }
+
+    .circle:nth-child(2){
+        background: radial-gradient(155% 155% at 50% 50%, rgba(40, 234, 232, 0.4) 0%, rgba(40, 234, 232, 0) 28.86%);
+        left: 377px;
+        top: 544px;
+    }
+
+    .circle:nth-child(3){
+        background: radial-gradient(155% 155% at 50% 50%, rgba(40, 234, 232, 0.4) 0%, rgba(40, 234, 232, 0) 28.86%);
+        left: 0;
+        top: 1524px;
+    }
+    .circle:nth-child(4){
+        background: radial-gradient(155% 155% at 50% 50%, rgba(40, 234, 232, 0.4) 0%, rgba(40, 234, 232, 0) 28.86%);
+        right: 0;
+        top: 2459px;
+    }
+
+    .circle:nth-child(5){
+        background: radial-gradient(155% 155% at 50% 50%, rgba(40, 234, 232, 0.4) 0%, rgba(40, 234, 232, 0) 28.86%);
+        left: -35px;
+        top: 4000px;
+    }
 /* Tablet Styles */
 /* @media only screen and (min-width: 401px) and (max-width: 960px) { */
   /* body { */
