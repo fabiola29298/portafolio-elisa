@@ -235,21 +235,18 @@ header {
 
 
 /* review */
-.review{
+/* .review{
   display: flex;
   justify-content: center;
-}
+} */
 .content-review{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px;
-  margin: 80px;
+  padding: 30px;
+  margin: 30px 0;
 
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 24px;
-  backdrop-filter: blur(40px);
 
 }
 .content-review img{
@@ -271,6 +268,55 @@ header {
   text-transform: uppercase;
   margin: 0;
 }
+.review {
+    margin-top: 40px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  padding: 28px;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.i-review {
+    content: "";
+  position: absolute;
+  backdrop-filter: blur(39.7657px);
+
+  z-index: -1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1.5rem;
+  padding: 4px; /* the thickness of the border */
+  /* the below will do the magic */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    /* this will cover only the content (no padding) */
+      linear-gradient(#fff 0 0) padding-box; /* this will cover the content and the padding */
+  -webkit-mask-composite: destination-out; /* needed for old browsers until the below is more supported */
+  mask-composite: exclude; /* this will exclude the first layer from the second so only the padding area will be kept visible */
+  }
+
+  .i-review::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.75) 0,
+        rgba(255, 255, 255, 0) 40%
+    );
+    transition: transform 0.7s linear;
+  }
 
 /* fin de review */
 
